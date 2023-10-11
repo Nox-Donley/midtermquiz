@@ -1,0 +1,26 @@
+from winsound import Beep
+def CountByThrees():
+    
+    for i in range(6, 39, 3):
+        print(i)
+CountByThrees()
+
+def ExerciseCheck():
+    Exercise = int(input("How Many Minutes Of Exercise Do You Get A Week"))
+    if Exercise < 20:
+        print("Thats Not Enough Exercise")
+    elif Exercise < 100:
+        print("Get A Bit More Exercise")
+    elif Exercise < 500:
+        print("Thats A Perfect Amount Of Exercise")
+    elif Exercise > 500:
+        print("That's A Lot Of Exercise, Make Sure You're Getting Enough Water And Protein!!!")
+ExerciseCheck()
+
+
+num = int(input("How Many Times Do You Want The Program To Beep???"))
+def UserBeeps(num):
+    while num != 0:
+        Beep(200, 200)
+        num-=1
+UserBeeps(num)
